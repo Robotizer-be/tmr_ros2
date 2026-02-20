@@ -7,12 +7,12 @@ TmSctRos2::TmSctRos2(rclcpp::Node::SharedPtr node, TmDriver &iface, bool is_fake
 {
 
     jns_.clear();
-    jns_.push_back("joint_1");
-    jns_.push_back("joint_2");
-    jns_.push_back("joint_3");
-    jns_.push_back("joint_4");
-    jns_.push_back("joint_5");
-    jns_.push_back("joint_6");
+    jns_.push_back("fryer_output_joint_1");
+    jns_.push_back("fryer_output_joint_2");
+    jns_.push_back("fryer_output_joint_3");
+    jns_.push_back("fryer_output_joint_4");
+    jns_.push_back("fryer_output_joint_5");
+    jns_.push_back("fryer_output_joint_6");
     
     if (!is_fake_) {
         listenNodeConnection = std::make_unique<ListenNodeConnection>(iface_,

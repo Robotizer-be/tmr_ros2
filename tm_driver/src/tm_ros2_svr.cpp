@@ -10,12 +10,12 @@ TmSvrRos2::TmSvrRos2(rclcpp::Node::SharedPtr node, TmDriver &iface, bool is_fake
     , is_fake(is_fake)
 {
     jns_.clear();
-    jns_.push_back("joint_1");
-    jns_.push_back("joint_2");
-    jns_.push_back("joint_3");
-    jns_.push_back("joint_4");
-    jns_.push_back("joint_5");
-    jns_.push_back("joint_6");
+    jns_.push_back("fryer_output_joint_1");
+    jns_.push_back("fryer_output_joint_2");
+    jns_.push_back("fryer_output_joint_3");
+    jns_.push_back("fryer_output_joint_4");
+    jns_.push_back("fryer_output_joint_5");
+    jns_.push_back("fryer_output_joint_6");
 
     pm_.fbs_pub = node->create_publisher<tm_msgs::msg::FeedbackState>("feedback_states", 1);
     pm_.joint_pub = node->create_publisher<sensor_msgs::msg::JointState>("joint_states", 1);
