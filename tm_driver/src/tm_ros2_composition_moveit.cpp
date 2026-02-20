@@ -57,6 +57,7 @@ void set_up_ros_print_fuction(){
 
 int main(int argc, char *argv[])
 {
+  std::cout<<"tm_ros2_composition_moveit start"<<std::endl;
     // Force flush of the stdout buffer.
     setvbuf(stdout, NULL, _IONBF, BUFSIZ);
 
@@ -68,6 +69,8 @@ int main(int argc, char *argv[])
     std::string host;
     if (argc > 1) {
         host = argv[1];
+        // Check if --ros-args is in the arguments, if so, ignore all arguments after it
+        host = host.substr(0, host.find("--ros-args"));
         if (host.find("robot_ip:=") != std::string::npos) {
           host.replace(host.begin(), host.begin() + 10, "");
           is_fake = false;
