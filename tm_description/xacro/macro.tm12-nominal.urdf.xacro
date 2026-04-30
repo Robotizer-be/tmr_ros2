@@ -242,8 +242,11 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://tm_description/meshes/tm5-900/collision/tmr_100w_01_c.stl" />
+        <mesh filename="package://tm_description/meshes/tm5-900/visual/tmr_100w_01.stl" />
       </geometry>
+      <!-- <geometry>
+        <mesh filename="package://tm_description/meshes/tm5-900/collision/tmr_100w_01_c.stl" />
+      </geometry> -->
     </collision>
     <inertial>
       <origin rpy="0.000000 0.000000 0.000000" xyz="0.000000 0.000000 0.000000" />
@@ -312,8 +315,11 @@
     </visual>
     <collision>
       <geometry>
-        <mesh filename="package://tm_description/meshes/tm5-900/collision/tmr_ee_c.stl" />
+        <mesh filename="package://tm_description/meshes/tm5-900/visual/tmr_ee.stl" />
       </geometry>
+      <!-- <geometry>
+        <mesh filename="package://tm_description/meshes/tm5-900/collision/tmr_ee_c.stl" />
+      </geometry> -->
     </collision>
     <inertial>
       <origin rpy="0.000000 0.000000 0.000000" xyz="0.000000 0.000000 0.000000" />
